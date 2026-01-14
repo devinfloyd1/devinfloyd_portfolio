@@ -1,6 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --color-gemini-dark: #0B0C10;
+  --color-gemini-blue: #2563EB;
+  --color-gemini-purple: #7C3AED;
+  --font-sans: 'Inter', 'system-ui', 'sans-serif';
+}
 
 :root {
   background-color: #0B0C10;
