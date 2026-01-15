@@ -5,7 +5,7 @@ const experiences = [
         role: "Solutions Engineer II - Data Infrastructure",
         company: "Capital Group",
         period: "Aug 2021 - Dec 2024",
-        description: "Built data analytics platform processing $50B+ daily transactions for 200+ institutional clients. Designed dimensional schemas on AWS Redshift and optimized Spark pipelines processing 500K+ records daily with 99.97% accuracy SLA."
+        description: "Built and operated high-volume, event-driven data pipelines processing 500K+ daily transactions and $50B+ in assets — integrating financial APIs, automating cloud workflows, and ensuring reliable, real-time data for downstream analytics and applications."
     },
     {
         role: "Media Technology Intern",

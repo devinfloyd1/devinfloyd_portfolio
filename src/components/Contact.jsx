@@ -15,7 +15,7 @@ const Contact = () => {
                 </h2>
                 <p className="text-xl text-gray-400 mb-12 leading-relaxed">
                     Interested in working together or have a question?
-                    <br />Drop me a line or connect on social media.
+                    <br />Email me or connect on socials.
                 </p>
 
                 <div className="flex flex-wrap justify-center gap-6">

@@ -39,9 +39,9 @@ const About = () => {
                 <motion.div variants={item} className="md:col-span-2 bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm hover:bg-white/10 transition-colors">
                     <h3 className="text-2xl font-semibold mb-4 text-white">The Engineer</h3>
                     <p className="text-gray-300 text-lg leading-relaxed">
-                        Data engineer with 4+ years building production pipelines and ML systems.
-                        I specialize in designing scalable dimensional schemas and optimizing Spark pipelines
-                        processing massive datasets.
+                        Data Platform Engineer with 4+ years building production-grade data and API systems for enterprise financial platforms.
+                        I specialize in designing and operating event-driven pipelines, cloud-native infrastructure, and high-volume data flows
+                        that power downstream analytics and ML-ready systems.
                     </p>
                 </motion.div>
 
@@ -56,7 +56,7 @@ const About = () => {
                     <Database className="w-10 h-10 text-purple-400 mb-4" />
                     <div>
                         <h4 className="text-xl font-bold mb-2">Data Infrastructure</h4>
-                        <p className="text-sm text-gray-400">AWS Redshift, Spark, Databricks</p>
+                        <p className="text-sm text-gray-400">Event-Driven Pipelines, API-Based Ingestion, AWS Redshift, PostgreSQL, Spark, Databricks, Data Quality & Validation</p>
                     </div>
                 </motion.div>
 
@@ -65,7 +65,7 @@ const About = () => {
                     <Trophy className="w-10 h-10 text-yellow-500 mb-4" />
                     <div>
                         <h4 className="text-xl font-bold mb-2">Background</h4>
-                        <p className="text-sm text-gray-400">Former D1 Football Player | Driven & Disciplined</p>
+                        <p className="text-sm text-gray-400">Former D1 Football Player| Former Senator at JMU | Driven & Disciplined</p>
                     </div>
                 </motion.div>
 
@@ -74,7 +74,7 @@ const About = () => {
                     <Brain className="w-10 h-10 text-pink-400 mb-4" />
                     <div>
                         <h4 className="text-xl font-bold mb-2">AI & ML</h4>
-                        <p className="text-sm text-gray-400">Sports Analytics & AI Applications</p>
+                        <p className="text-sm text-gray-400">Sports Analytics, ML-Ready Data Pipelines, AI Applications</p>
                     </div>
                 </motion.div>
 

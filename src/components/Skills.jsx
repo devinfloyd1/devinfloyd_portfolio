@@ -1,9 +1,28 @@
 import { motion } from 'framer-motion';
 
 const skills = [
-    { category: "Languages", items: ["Python", "SQL", "Java", "JavaScript"] },
-    { category: "Data & Infrastructure", items: ["Spark", "Databricks", "AWS Redshift", "PostgreSQL", "ETL/ELT Pipelines", "Dimensional Modeling"] },
-    { category: "Cloud & Tools", items: ["AWS (S3, Lambda, EMR, Kinesis)", "Docker", "Terraform", "Datadog"] }
+    { category: "Languages", items: ["Python", "SQL", "Java", "JavaScript", "React"] },
+    {
+        category: "Data & Infrastructure", items: [
+            "Event-Driven Pipelines",
+            "API-Based Data Ingestion",
+            "AWS Redshift",
+            "PostgreSQL",
+            "Spark",
+            "Databricks",
+            "ETL / ELT Pipelines",
+            "Data Quality & Validation"]
+    },
+    {
+        category: "Cloud & Tools", items: [
+            "AWS (S3, Lambda, API Gateway, EMR, Kinesis, Redshift, SageMaker, Bedrock)",
+            "Docker",
+            "Terraform",
+            "Datadog",
+            "CloudWatch",
+            "CI/CD Pipelines"
+        ]
+    }
 ];
 
 const Skills = () => {
