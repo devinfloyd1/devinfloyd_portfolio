@@ -44,7 +44,7 @@ const Hero = () => {
                 </motion.h1>
 
                 <motion.p variants={itemVariants} className="text-xl md:text-2xl text-gray-400 font-light mb-12 tracking-wide">
-                    Data Platform Engineer | ML Enthusiast
+                    Data Engineer | ML Enthusiast
                 </motion.p>
 
                 <motion.div variants={itemVariants}>
