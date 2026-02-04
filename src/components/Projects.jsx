@@ -3,6 +3,14 @@ import { Github, ExternalLink, ArrowRight } from 'lucide-react';
 
 const projects = [
     {
+        title: "🏀 Real-Time Sports Betting Odds Tracker 🏈",
+        description: "Real-time streaming pipeline that ingests live NBA & NFL betting odds from 9+ sportsbooks, detects arbitrage opportunities, and displays them in a live dashboard. Built with AWS Kinesis for streaming, Lambda for processing, and DynamoDB for sub-millisecond queries. ⚡",
+        tags: ["AWS Kinesis", "Lambda", "DynamoDB", "S3", "API Gateway", "EventBridge", "Terraform", "Next.js", "React", "Tailwind CSS", "Vercel"],
+        github: null,
+        demo: "https://sports-betting-pipeline.vercel.app/",
+        color: "from-amber-500 to-orange-500"
+    },
+    {
         title: "AWS Data Lakehouse Pipeline",
         description: "End-to-end data platform demonstrating modern lakehouse architecture. Ingests external API data via Lambda, stores in S3, transforms with Glue/PySpark to Iceberg format, serves through Redshift to a REST API for BI consumption.",
         tags: ["AWS", "PySpark", "Iceberg", "Redshift", "Terraform"],
