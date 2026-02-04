@@ -33,7 +33,7 @@ const Education = () => {
                         <div>
                             <h4 className="text-xl font-semibold text-white">James Madison University</h4>
                             <p className="text-gemini-blue font-medium">BBA in Computer Information Systems</p>
-                            <p className="text-gray-400 mt-2">2021 | GPA: 3.72</p>
+                            <p className="text-gray-400 mt-2">GPA: 3.72</p>
                         </div>
                     </div>
                 </motion.div>
