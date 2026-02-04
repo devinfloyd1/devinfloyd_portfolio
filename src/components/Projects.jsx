@@ -3,6 +3,14 @@ import { Github, ExternalLink, ArrowRight } from 'lucide-react';
 
 const projects = [
     {
+        title: "AWS Data Lakehouse Pipeline",
+        description: "End-to-end data platform demonstrating modern lakehouse architecture. Ingests external API data via Lambda, stores in S3, transforms with Glue/PySpark to Iceberg format, serves through Redshift to a REST API for BI consumption.",
+        tags: ["AWS", "PySpark", "Iceberg", "Redshift", "Terraform"],
+        github: "https://github.com/devinfloyd1/data-lakehouse-project",
+        demo: "https://fbi29ox3p0.execute-api.us-east-1.amazonaws.com/weather/summary",
+        color: "from-cyan-500 to-blue-600"
+    },
+    {
         title: "Real-Time Data Pipeline",
         description: "Built a streaming data pipeline using Kafka and Spark to process millions of events per day with sub-second latency.",
         tags: ["Kafka", "Spark", "Python"],
