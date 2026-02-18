@@ -37,9 +37,9 @@ const About = () => {
             >
                 {/* Main Bio Card */}
                 <motion.div variants={item} className="md:col-span-2 bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm hover:bg-white/10 transition-colors">
-                    <h3 className="text-2xl font-semibold mb-4 text-white">Data & Backend</h3>
+                    <h3 className="text-2xl font-semibold mb-4 text-white">The Engineer</h3>
                     <p className="text-gray-300 text-lg leading-relaxed">
-                        Data Engineer with 4+ years building production-grade data and API systems for enterprise financial platforms.
+                        Data & Backend Engineer with 4+ years building production-grade data and API systems for enterprise financial platforms.
                         I specialize in designing and operating event-driven pipelines, cloud-native infrastructure, and high-volume data flows
                         that power downstream analytics and ML-ready systems.
                     </p>
