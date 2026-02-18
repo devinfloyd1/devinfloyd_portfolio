@@ -5,7 +5,7 @@ const experiences = [
         role: "Solutions Engineer II - Data & Cloud",
         company: "Capital Group",
         period: "Aug 2021 - Dec 2024",
-        description: "Built and operated high-volume, event-driven data pipelines processing 500K+ daily transactions and $50B+ in assets — integrating financial APIs, automating cloud workflows, and ensuring reliable, real-time data for downstream analytics and applications."
+        description: "Built and operated high-volume, event-driven data pipelines processing 500K+ daily transactions and $50B+ in assets, integrating financial APIs, automating cloud workflows, and ensuring reliable, real-time data for downstream analytics and applications."
     },
     {
         role: "Media Technology Intern",
