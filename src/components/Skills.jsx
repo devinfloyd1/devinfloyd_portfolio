@@ -1,27 +1,29 @@
 import { motion } from 'framer-motion';
 
 const skills = [
-    { category: "Languages", items: ["Python", "SQL", "Java", "JavaScript", "React"] },
     {
-        category: "Data & Infrastructure", items: [
-            "Event-Driven Pipelines",
-            "API-Based Data Ingestion",
-            "AWS Redshift",
-            "PostgreSQL",
-            "Spark",
-            "Databricks",
-            "ETL / ELT Pipelines",
-            "Data Quality & Validation"]
+        category: "Languages",
+        items: ["Python (Expert)", "SQL (Expert)", "C# .NET", "Java", "C++", "JavaScript", "Go"]
     },
     {
-        category: "Cloud & Tools", items: [
-            "AWS (S3, Lambda, API Gateway, EMR, Kinesis, Redshift, SageMaker, Bedrock)",
-            "Docker",
-            "Terraform",
-            "Datadog",
-            "CloudWatch",
-            "CI/CD Pipelines"
-        ]
+        category: "Data Platforms",
+        items: ["Kafka", "Airflow", "Iceberg", "Databricks", "Snowflake", "PostgreSQL", "Redis", "MySQL"]
+    },
+    {
+        category: "Data Engineering",
+        items: ["Spark/PySpark", "SSIS", "ETL/ELT Pipelines", "Batch & Stream Processing", "Data Modeling", "Star Schemas", "OLAP"]
+    },
+    {
+        category: "AWS",
+        items: ["S3", "Lambda", "Kinesis", "EMR", "Glue", "EC2", "ECS", "DynamoDB", "API Gateway", "EventBridge", "Athena", "Step Functions", "SQS", "SNS", "Redshift"]
+    },
+    {
+        category: "Backend & DevOps",
+        items: ["REST APIs", "Microservices", "Terraform", "Docker", "Kubernetes", "GitHub Actions", "Harness"]
+    },
+    {
+        category: "Observability",
+        items: ["Datadog", "CloudWatch", "Great Expectations", "SLOs/SLIs", "Data Quality Monitoring"]
     }
 ];
 
