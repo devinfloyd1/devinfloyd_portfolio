@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Database, Brain, Trophy } from 'lucide-react';
+import { DataInfraIcon, BackgroundIcon, AIMLIcon } from './icons/AboutIcons';
 
 const About = () => {
     const container = {
@@ -53,7 +53,7 @@ const About = () => {
 
                 {/* Focus Card 1 */}
                 <motion.div variants={item} className="bg-white/5 border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-2 transition-transform duration-300">
-                    <Database className="w-10 h-10 text-purple-400 mb-4" />
+                    <DataInfraIcon delay={300} />
                     <div>
                         <h4 className="text-xl font-bold mb-2">Data Infrastructure</h4>
                         <p className="text-sm text-gray-400">Event-Driven Pipelines, API-Based Ingestion, AWS Redshift, PostgreSQL, Spark, Databricks, Data Quality & Validation</p>
@@ -62,7 +62,7 @@ const About = () => {
 
                 {/* Focus Card 2 */}
                 <motion.div variants={item} className="bg-white/5 border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-2 transition-transform duration-300">
-                    <Trophy className="w-10 h-10 text-yellow-500 mb-4" />
+                    <BackgroundIcon delay={500} />
                     <div>
                         <h4 className="text-xl font-bold mb-2">Background</h4>
                         <p className="text-sm text-gray-400">Former D1 Football Player | Former Senator at JMU</p>
@@ -71,7 +71,7 @@ const About = () => {
 
                 {/* Focus Card 3 */}
                 <motion.div variants={item} className="bg-white/5 border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-2 transition-transform duration-300">
-                    <Brain className="w-10 h-10 text-pink-400 mb-4" />
+                    <AIMLIcon delay={700} />
                     <div>
                         <h4 className="text-xl font-bold mb-2">AI & ML</h4>
                         <p className="text-sm text-gray-400">Sports Analytics, ML-Ready Data Pipelines, AI Applications</p>
