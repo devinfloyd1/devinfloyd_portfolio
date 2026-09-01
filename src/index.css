@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;1,14..32,300&display=swap');
 
 @theme {
   --color-gemini-dark: #0B0C10;
@@ -11,7 +11,7 @@
 :root {
   background-color: #0B0C10;
   color: #ffffff;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -22,20 +22,132 @@ body {
   background-color: #0B0C10;
 }
 
-/* Custom Scrollbar for Webkit */
-::-webkit-scrollbar {
-  width: 8px;
+/* ─── Apple-style liquid glass card ─────────────────────────────────── */
+.glass-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.07) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 0 0 0.5px rgba(255,255,255,0.06) inset,
+    0 1px 0 rgba(255,255,255,0.14) inset,   /* top highlight edge */
+    0 -1px 0 rgba(0,0,0,0.3) inset,          /* bottom shadow edge */
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 1px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
 }
 
-::-webkit-scrollbar-track {
-  background: #0B0C10;
+/* subtle top-edge specular line */
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.28) 40%, rgba(255,255,255,0.18) 60%, transparent);
+  pointer-events: none;
+  z-index: 1;
 }
 
+/* ─── Stat pill (Apple visionOS glass) ──────────────────────────────── */
+.glass-stat {
+  background: linear-gradient(
+    145deg,
+    rgba(37, 99, 235, 0.22) 0%,
+    rgba(37, 99, 235, 0.06) 60%,
+    rgba(124, 58, 237, 0.12) 100%
+  );
+  backdrop-filter: blur(32px) saturate(200%) brightness(1.1);
+  -webkit-backdrop-filter: blur(32px) saturate(200%) brightness(1.1);
+  border: 1px solid rgba(100, 160, 255, 0.22);
+  box-shadow:
+    0 0 0 0.5px rgba(255,255,255,0.08) inset,
+    0 1.5px 0 rgba(255,255,255,0.2) inset,
+    0 -1px 0 rgba(0,0,0,0.25) inset,
+    0 0 60px rgba(37,99,235,0.12),
+    0 12px 40px rgba(0,0,0,0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-stat::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(150,200,255,0.5) 40%, rgba(150,200,255,0.3) 60%, transparent);
+  pointer-events: none;
+}
+
+/* floating inner reflection blob */
+.glass-stat::after {
+  content: '';
+  position: absolute;
+  top: 8px; left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 35%;
+  background: radial-gradient(ellipse at 50% 0%, rgba(255,255,255,0.12) 0%, transparent 70%);
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+/* ─── Glass nav pill ─────────────────────────────────────────────────── */
+.glass-nav {
+  background: rgba(11, 12, 16, 0.55);
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.12) inset,
+    0 0 0 0.5px rgba(255,255,255,0.05) inset,
+    0 8px 32px rgba(0,0,0,0.5),
+    0 0 0 1px rgba(0,0,0,0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-nav::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 10%; right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.22) 50%, transparent);
+  pointer-events: none;
+}
+
+/* ─── Skill badge glass ──────────────────────────────────────────────── */
+.glass-badge {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.12) inset, 0 2px 8px rgba(0,0,0,0.3);
+  transition: all 0.2s ease;
+}
+
+.glass-badge:hover {
+  border-color: rgba(255,255,255,0.2);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.18) inset, 0 4px 16px rgba(0,0,0,0.4);
+  transform: translateY(-1px);
+}
+
+/* ─── Custom Scrollbar ───────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0B0C10; }
 ::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 4px;
+  background: linear-gradient(180deg, #2563EB 0%, #7C3AED 100%);
+  border-radius: 6px;
 }
+::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, #3b82f6 0%, #9333ea 100%); }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
+/* ─── Smooth section transitions ─────────────────────────────────────── */
+section { position: relative; }
+
+/* ─── Selection color ────────────────────────────────────────────────── */
+::selection { background: rgba(37,99,235,0.35); color: #fff; }
