@@ -2,16 +2,22 @@ import { motion } from 'framer-motion';
 
 const experiences = [
     {
-        role: "Solutions Engineer II - Data & Cloud",
-        company: "Capital Group",
-        period: "Aug 2021 - Dec 2024",
-        description: "Built and operated high-volume, event-driven data pipelines processing 500K+ daily transactions and $50B+ in assets, integrating financial APIs, automating cloud workflows, and ensuring reliable, real-time data for downstream analytics and applications."
+        role: "Cloud Data Engineer – Data & AI",
+        company: "Pariveda Solutions",
+        period: "Feb 2026 – Present",
+        description: "Embedded with Stanford Health Care's Platform & Ingestion Team. Built a 118 TB, 70,000+ table migration from Oracle/Snowflake to Databricks Medallion Architecture, integrated with Databricks ML/AI tools such as Genie. Designing reusable ingestion patterns for Databricks Spark Declarative Pipelines and LakeFlow Connect. Also built internal AI-powered developer workspaces using Model Context Protocol (MCP) servers, standardizing how the team builds, tests, and operates services."
+    },
+    {
+        role: "Solutions Engineer II – Data & Backend Engineering",
+        company: "Capital Group ($2.6T AUM)",
+        period: "Aug 2021 – Dec 2025",
+        description: "Built and operated a data platform processing 500K+ daily financial transactions and $50B+ in assets. Designed dimensional schemas and star schemas on AWS Redshift powering BI dashboards for 200+ institutional clients. Developed batch and streaming ETL/ELT pipelines using Spark and Kinesis processing 2M+ events/day with 99.97% accuracy SLA. Built 15+ internal REST APIs and established a data quality monitoring framework using Great Expectations, reducing MTTR from 45 to 12 minutes."
     },
     {
         role: "Media Technology Intern",
         company: "NBCUniversal",
-        period: "Jun 2020 - Aug 2020",
-        description: "Built internal application using Java, Node.js, and PostgreSQL. Team won 1st place in company-wide competition."
+        period: "Jun 2020 – Aug 2020",
+        description: "Led infrastructure migration across 50+ production broadcast servers, reducing deployment time and improving system reliability. Won 1st place in a company-wide hackathon building a full-stack media scheduling app using React, Node.js, and SQL Server."
     }
 ];
 
