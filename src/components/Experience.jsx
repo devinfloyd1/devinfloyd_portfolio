@@ -5,7 +5,7 @@ const experiences = [
         role: "Cloud Data Engineer – Data & AI",
         company: "Pariveda Solutions",
         period: "Feb 2026 – Present",
-        description: "Embedded with Stanford Health Care's Platform & Ingestion Team. Built a 118 TB, 70,000+ table migration from Oracle/Snowflake to Databricks Medallion Architecture, integrated with Databricks ML/AI tools such as Genie. Designing reusable ingestion patterns for Databricks Spark Declarative Pipelines and LakeFlow Connect. Also built internal AI-powered developer workspaces using Model Context Protocol (MCP) servers, standardizing how the team builds, tests, and operates services."
+        description: "Embedded with a Health Care client's Platform & Ingestion Team. Built a 118 TB, 70,000+ table migration from Oracle/Snowflake to Databricks Medallion Architecture, integrated with Databricks ML/AI tools such as Genie. Designing reusable ingestion patterns for Databricks Spark Declarative Pipelines and LakeFlow Connect. Also built internal AI-powered developer workspaces using Model Context Protocol (MCP) servers, standardizing how the team builds, tests, and operates services."
     },
     {
         role: "Solutions Engineer II – Data & Backend Engineering",
