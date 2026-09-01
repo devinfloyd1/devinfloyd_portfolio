@@ -19,7 +19,7 @@ const projects = [
         color: "from-cyan-500 to-blue-600"
     },
     {
-        title: "🛡️ ClawGuard Security Scanner",
+        title: "ClawGuard Security Scanner",
         description: "Python security scanner that detects malicious patterns in OpenClaw skills before installation. Uses multi-level analysis with AST parsing, pattern matching, and network detection across 70+ indicators of compromise. Assigns risk scores (0-100) with severity levels and supports console, JSON, and Markdown reporting.",
         tags: ["Python", "Security", "AST Analysis", "CLI", "Threat Detection"],
         github: "https://github.com/devinfloyd1/clawguard",
