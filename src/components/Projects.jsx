@@ -3,8 +3,8 @@ import { Github, ExternalLink, ArrowRight } from 'lucide-react';
 
 const projects = [
     {
-        title: "🏀 Real-Time Sports Betting Odds Tracker 🏈",
-        description: "Real-time streaming pipeline that ingests live NBA & NFL betting odds from 9+ sportsbooks, detects arbitrage opportunities, and displays them in a live dashboard. Built with AWS Kinesis for streaming, Lambda for processing, and DynamoDB for sub-millisecond queries. ⚡",
+        title: "Real-Time Sports Betting Odds Tracker",
+        description: "Real-time streaming pipeline that ingests live NBA & NFL betting odds from 9+ sportsbooks, detects arbitrage opportunities, and displays them in a live dashboard. Built with AWS Kinesis for streaming, Lambda for processing, and DynamoDB for sub-millisecond queries.",
         tags: ["AWS Kinesis", "Lambda", "DynamoDB", "S3", "API Gateway", "EventBridge", "Terraform", "Next.js", "React", "Tailwind CSS", "Vercel"],
         github: null,
         demo: "https://sports-betting-pipeline.vercel.app/",
