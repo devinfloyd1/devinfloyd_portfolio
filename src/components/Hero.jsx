@@ -43,16 +43,6 @@ const Hero = () => {
                 animate="visible"
                 className="text-center z-10 px-4"
             >
-                {/* Eyebrow label */}
-                <motion.div variants={itemVariants} className="mb-6 inline-flex items-center gap-2">
-                    <span
-                        className="px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase text-blue-300 glass-nav"
-                        style={{ letterSpacing: '0.2em' }}
-                    >
-                        Available for Opportunities
-                    </span>
-                </motion.div>
-
                 <motion.h1
                     variants={itemVariants}
                     className="text-6xl md:text-9xl font-bold mb-5 tracking-tighter"
